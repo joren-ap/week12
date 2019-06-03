@@ -1,0 +1,85 @@
+:root {
+  --een: white;
+  --twee: black;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-family: helvetica;
+  width: 100%;
+  height: 100vh;
+}
+
+h2 {
+  font-size: 5vh;
+  background-color: var(--twee);
+  padding: 1vh 3vw;
+  border radius: 16px;
+  color: var(--een);
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+
+a {
+  text-decoration: none;
+}
+
+div:nth-child(1) {
+  background-image: url(backgr.jpg);
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+img:nth-child(1) {
+  position: relative;
+  width: 25%;
+  left: 2vw;
+  z-index: 1;
+}
+
+img:nth-child(2) {
+  position: relative;
+  width: 39%;
+  filter: blur(5px);
+}
+
+img:nth-child(3) {
+  position: relative;
+  width: 35%;
+  left: -2vw;
+  filter: blur(3px);
+}
+
+div:nth-child(2) {
+  background-color: var(--een);
+}
+
+div:nth-child(3) {
+  height: 400px;
+  background-image: linear-gradient(black, black);
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  position: relative;
+}
+
+div:nth-child(4) {
+  background-color: #2A2E32;
+}
+
+#movie {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  pointer-events: none;
+  filter: blur(70px);
+}
+
+.onzichtbaar {
+  background-color: rgba(255,0,0,0);
+  transition-property: all;
+  transition-duration: 0.3s;
+}
